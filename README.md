@@ -19,7 +19,7 @@ A deep learning neural network was designed using python’s tensorflow library.
 
 ### Resources Utilized to Complete Analysis
 * **Data Sources:** 
-[charity_data.CSV](https://github.com/cmmgw/Neural_Network_Charity_Analysis/blob/main/Resources/charity_data.csv) 
+[charity_data.CSV][(https://github.com/RabidZippers/Neural_Network/blob/main/Neural_Network/Resources/charity_data.csv)]
 * **Languages:** Python
 * **Python Dependencies:** scikit-learn, pandas, tensorflow, os
 * **Tools:** Jupyter Notebook
@@ -27,15 +27,15 @@ A deep learning neural network was designed using python’s tensorflow library.
 ## Results
 
 ### Data Preprocessing
-* **What variable(s) are considered the target(s) for the model?** The "IS_SUCCESSFUL" column is the target, as it contains data on whether the donations were used effectively. The target variable is the dependent variable, y.  
-* **What variable(s) are considered to be the features for the model?** The following variables are considered to be the features for the model: APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, STATUS, INCOME_AMT, SPECIAL_CONSIDERATIONS, ASK_AMT. These variables are the independent variables, x.
-* **What variable(s) are neither targets nor features, and should be removed from the input data?** The identification columns EIN and NAME were dropped, as they are not beneficial when completing the analysis.
+* **What variable(s) are considered the target(s) for the model?** The "IS_SUCCESSFUL" column is the target, it's data is based on whether the donations are succesfully used. The target variable is the dependent variable, y.  
+* **What variable(s) are considered to be the features for the model?** The APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, STATUS, INCOME_AMT, SPECIAL_CONSIDERATIONS, ASK_AMT following are the features for the model. These variables are the independent variables, x.
+* **What variable(s) are neither targets nor features, and should be removed from the input data?** The columns EIN and NAME were dropped, because they were not beneficial to the analysis.
 
 ### Compiling, Training, and Evaluating the Model
-* **How many neurons, layers, and activation functions were selected for the neural network model, and why?** For the deep neural network model, 80 neurons were in the first hidden layer and 30 neurons were in the second hidden layer. The ReLU activation function was utilized on both hidden layers. An advantage for using the ReLU activation function is that it identifies nonlinear characteristics from the input values. If the output of the linear transformation is less than 0, the neurons will be deactivated. 
-* **Was target model performance achieved?** Performance of 75% accuracy was not achieved by the target model, as it attained 73.78%. 
-* **What steps were taken to try and increase model performance?** In an attempt to optimize model performance, a third hidden layer was added with 15 neurons and the activation functions were adjusted. The first hidden layer maintained the ReLU activation function, however the second and third layers utilized the Sigmoid activation function. Unfortunately, performance of 75% was not achieved by the optimized model. 
+* **How many neurons, layers, and activation functions were selected for the neural network model, and why?** For the deep neural network model, 100 neurons were in the first hidden layer and 60 neurons were in the second hidden layer. The ReLU activation function was utilized on both hidden layers. An advantage for using the ReLU activation function is that it identifies nonlinear characteristics from the input values. If the output of the linear transformation is less than 0, the neurons will be deactivated. 
+* **Was target model performance achieved?** Performance of 75% accuracy was not achieved by the target model, as it attained 73.37%. 
+* **What steps were taken to try and increase model performance?** In an attempt to optimize model performance, a third hidden layer was added with 25 neurons and the activation functions were adjusted. The first hidden layer maintained the ReLU activation function, however the second and third layers utilized the Sigmoid activation function. Unfortunately, only 73.5% was achieved. 
 
 
 ## Summary
-Despite attempting to optimize the model four times, performance of 75% was not achieved. In an attempt to optimize model accuracy, it is recommended to adjust the number of hidden layers and neurons, along with the corresponding activation functions for each layer.
+Despite attempting to optimize the model a few times, performance of 75% was not achieved. In an attempt to optimize model accuracy, it is recommended to adjust the number of hidden layers and neurons, along with the corresponding activation functions for each layer.
